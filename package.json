@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network bscTestnet",
+    "verify:factory": "hardhat run scripts/verifyFactory.js --network bscTestnet",
+    "verify:token": "hardhat run scripts/verify.js --network bscTestnet",
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.5.0",
+    "hardhat": "^2.24.1"
+  }
+}
